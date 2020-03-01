@@ -1,0 +1,84 @@
+#Logged {
+    display: none;
+}
+
+body {
+    color:white;
+}
+
+#registro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.separa {
+    margin-top: 1em;
+}
+
+.separapoco {
+    margin-top: 0.2em;
+}
+
+#registrado {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#saludo {
+    color:black;
+}
+
+#OtrosLogs {
+    display: none;
+    padding: 2em;
+}
+
+#OtrosLogs > button{
+    margin-left: 1em;
+}
+
+#botonGitHub {
+    background: url("../images/img/iconGitHub.png") no-repeat;
+    background-size: cover;
+    height: 5em;
+    width: 5em;
+    border: none;
+}
+
+#botonTwitter {
+    background: url("../images/img/iconTwitter.png") no-repeat;
+    background-size: cover;
+    height: 5em;
+    width: 5em;
+    border: none;
+}
+
+#botonTelefono {
+    background: url("../images/img/iconTelefono.png") no-repeat;
+    background-size: cover;
+    height: 5em;
+    width: 5em;
+    border: none;
+}
+
+input {
+    border-radius: 1em;
+}
+
+#registradoTlfn {
+    display:none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#verificacion {
+    display:none;
+    flex-direction: column;
+}
+
+#Info {
+    max-width: 13em;
+}
