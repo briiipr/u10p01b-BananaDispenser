@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#contenidologin {
+  height: 100vh;
+  background: url("./images/img/bananaFondo.jpeg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginicono {
+  background: url("./images/img/LogoRedondoBananaDispenser.png") no-repeat;
+  background-size: 100%;
+  height: 10em;
+  width: 10em;
+  align-self: flex-start;
+  margin: 6.5em 2em 0em 0em;
+}
+
+#loginwindow {
+  background: url("./images/img/fondologin.jpg") no-repeat;
+  background-size: cover;
+  height: 80%;
+  width: 80%;
+  margin-right: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#loginlogin {
+  display: flex;
+  background-color: rgb(20, 27, 37);
+  height: 25em;
+  width: 30em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+  margin: 0em 0em 3em 5em;
+  flex-direction: column;
+}
+
+#root {
+  display: none;
+}
+
+#saludo {
+  display: none;
+}
