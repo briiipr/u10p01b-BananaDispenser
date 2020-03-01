@@ -4,7 +4,6 @@ import ChampionsFilter from './Filtros/filtersC.js';
 import { ChampionsContextProvider } from './championsContext.js';
 
 export function App() {
-
     return (
         <ChampionsContextProvider>
             <ChampionsFilter />

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import ChampionCard from './ChampionCard/championCard';
 import { ChampionsContext } from '../../championsContext';
-import CardGroup from 'react-bootstrap/CardGroup';
 import './championsC.css';
 
 export default function ChampionsC() {

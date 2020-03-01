@@ -1,0 +1,41 @@
+#contendorFiltros{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+#contenedorFiltros img{
+    margin: 1rem 3rem;
+}
+
+#contenedorFiltros div{
+    margin: 1rem 3rem;
+    color: gold;
+}
+
+#contenedorFiltros form{
+    margin: 1rem 3rem;
+    color: gold;
+    
+}
+
+input{
+    background-color: black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: gold;
+    color: gold;
+    padding: 0px 5px;
+}
+
+input:focus{
+    box-shadow: none;
+    /*HAY QUE ENCONTRAR EL BORDE QUE APARECE AL PINCHAR*/
+}
+
+label{
+    margin: 0px 5px
+}
+

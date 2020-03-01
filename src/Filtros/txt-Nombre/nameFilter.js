@@ -11,7 +11,6 @@ export default function FilterName(funcion) {
                 setInput(e.target.value)
                 dispatch({type: 'filtraNombre', payload: e.target.value.trim()})
             }} />
-            <label>{input}</label>
         </div>
     );
 }
