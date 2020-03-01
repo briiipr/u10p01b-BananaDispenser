@@ -6,7 +6,6 @@ function limpia() {
     document.getElementById("verificacion").style.display = "none";
     document.getElementById("Logged").style.display = "flex";
     document.getElementById("Info").innerHTML = "";
-    document.getElementById("root").style.display = "flex";
     document.getElementById("contenidologin").style.display = "none";
     document.getElementById("saludo").style.display = "flex";
 }

@@ -14,7 +14,7 @@ export default function ChampionsC() {
     useEffect(() => {
         if (inicio === true) {
             Axios.get('https://ddragon.leagueoflegends.com/cdn/10.4.1/data/es_ES/champion.json').then(result => {
-                dispatch({ type: "inicio", payload: result.data.data })
+                dispatch({ type: "inicio", payload: result.data.data });
                 setCampeones(state);
             });
             inicio = false;

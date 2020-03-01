@@ -23,7 +23,7 @@ export default class CrearCuenta extends Component {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            if (errorCode == 'auth/weak-password') {
+            if (errorCode === 'auth/weak-password') {
               alert('La contraseña es debil');
             } else {
               alert(errorMessage);

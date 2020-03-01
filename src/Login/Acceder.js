@@ -5,6 +5,14 @@ import './Login.css';
 
 export default class Acceder extends Component {
 
+  constructor(props){
+    console.log('VALOR PROPS EN EL CONSTRUCTOR: ' + props.isLogedIn)
+    super(props);
+    this.state = {
+      isLogedIn: props.isLogedIn
+    }
+  }
+
   /**
   * @author Cristian Martin Quintero 2 Daw A
   * @description Recoge los valores de usuario y contraseña y comprueba en el servidor de firebase si existe dicho usuario
@@ -16,7 +24,7 @@ export default class Acceder extends Component {
     fire.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
       // Handle Errors here.
       var errorCode = error.code;
-      if (errorCode == 'auth/invalid-email') {
+      if (errorCode === 'auth/invalid-email') {
         document.getElementById("Info").innerHTML = `El correo es invalido`;
       }
       console.log(error);
@@ -25,7 +33,8 @@ export default class Acceder extends Component {
         if (result != null) { 
           let user = result.user;
           document.getElementById("saludo").innerHTML = `Bienvenido ${user.email}`;
-          limpia()
+          console.log('VALOR DE PROPS: ' + this.props)
+          limpia();
         } else {
           document.getElementById("Info").innerHTML = `Usuario o contraseña mal introducidos`;
         }

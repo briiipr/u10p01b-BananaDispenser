@@ -13,7 +13,7 @@ export default class AccederTlfn extends Component {
   phoneAuth() {
     document.getElementById("recaptcha-container").style.display = "inline"
     let telefono = document.getElementById('telefono').value
-    if(telefono.length == 9 && !(isNaN(telefono))) {
+    if(telefono.length === 9 && !(isNaN(telefono))) {
       let prefijo = document.getElementById('prefijo').value
       telefono = `+${prefijo}${telefono}`
       window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');

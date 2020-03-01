@@ -5,11 +5,6 @@ import modalChampions from '../ModalChampions/modalChampions';
 
 
 function ChampionCard(campeon, img) {
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 647ea71baf5ea4b865ce0c4ef20d3b480ddbe5bb
     /* console.log('VALOR CAMPEON RECIBIDO: ')
     console.log(campeon)
     console.log('VALOR IMG: ' + img) */

@@ -23,9 +23,6 @@ export default class LogOut extends Component {
       document.getElementById("registro").style.display = "flex";
       document.getElementById("OtrosLogs").style.display = "none";
       document.getElementById("Logged").style.display = "none";
-      document.getElementById("root").style.display = "none";
-      document.getElementById("contenidologin").style.display = "";
-      document.getElementById("saludo").style.display = "none";
     })
       .catch(console.log);
   }
