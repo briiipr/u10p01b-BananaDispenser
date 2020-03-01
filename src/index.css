@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   background-color: black;
-  background-image: url('./images/img/fondoIndex.png');
+  background-image: url('images/img/fondoIndex.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
