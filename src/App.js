@@ -1,21 +1,15 @@
+import * as React from 'react';
+import ChampionsC from './Contenido/ChampionsContainer/championsC.js';
+import ChampionsFilter from './Filtros/filtersC.js';
+import { ChampionsContextProvider } from './championsContext.js';
 
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import FetchChampions from './Contenido/ChampionsContainer/championsC.js';
-
-
-function App() {
-    const [count, setCount] = useState(0);
-
-    // Similar to componentDidMount and componentDidUpdate:
-    useEffect(() => {
-        // Update the document title using the browser API
-        document.title = `You clicked ${count} times`;
-    });
-
+export function App() {
     return (
-        <FetchChampions />
-    );
+        <ChampionsContextProvider>
+            <ChampionsFilter />
+            <ChampionsC />
+        </ChampionsContextProvider>
+    )
 }
 
 export default App;

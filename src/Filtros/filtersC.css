@@ -1,0 +1,13 @@
+#contendorFiltros{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#contenedorFiltros img{
+    width: 5%;
+}
+
+label{
+    margin: 0px 5px
+}

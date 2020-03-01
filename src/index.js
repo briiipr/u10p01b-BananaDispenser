@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -9,7 +10,15 @@ import AccederTlfn from './Login/AccederTlfn';
 import OtrosLogs from './Login/OtrosLogins';
 import LogOut from './Login/LogOut';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function main(target, container) {
+    ReactDOM.render(target, container);
+}
+
+main(
+
+    <App />,
+    document.getElementById("root")
+);
 
 ReactDOM.render(
   <CrearCuenta />,

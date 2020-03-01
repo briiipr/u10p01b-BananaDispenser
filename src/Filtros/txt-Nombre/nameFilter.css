@@ -1,0 +1,18 @@
+#nameFilterDiv{
+    margin: 1rem 3rem;
+    color: gold;
+}
+
+#nameFilterDiv input{
+    background-color: black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: gold;
+    color: gold;
+    padding: 0px 5px;
+}
+
+#nameFilterDiv input:focus{
+    outline: none;
+}
