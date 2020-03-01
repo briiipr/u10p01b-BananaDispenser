@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import './championCard.css';
 import modalChampions from '../ModalChampions/modalChampions';
-import { Modal } from 'react-bootstrap';
 
 
 function ChampionCard(campeon, img) {
-
-    const [modalShow, setModalShow] = useState(false);
-
+    
     /* console.log('VALOR CAMPEON RECIBIDO: ')
     console.log(campeon)
     console.log('VALOR IMG: ' + img) */

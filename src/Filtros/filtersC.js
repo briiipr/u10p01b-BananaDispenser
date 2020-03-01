@@ -10,7 +10,7 @@ export default function FilterChampions(campeon, img) {
     return (
         <div id="contenedorFiltros">
             <React.Fragment>
-                <Image src="/images/img/LogoRedondoBananaDispenser.png" roundedCircle />
+                <div class="rounded-circle"></div>
                 <NameFilter />
                 <NameSort />
             </React.Fragment>
