@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import ChampionCard from './ChampionCard/championCard';
 import { ChampionsContext } from '../../championsContext';
+import { ChampionModalContext } from './ChampionModal/ChampionModalContext.js';
+import ChampionModal from './ChampionModal/ChampionModal.js';
 import './championsC.css';
 
 export default function ChampionsC() {
@@ -9,7 +11,9 @@ export default function ChampionsC() {
     const terminacion = '_0.jpg';
     var inicio = true;
     let { state, dispatch } = React.useContext(ChampionsContext);
+/*     let { stateModal, dispatchModal } = React.useContext(ChampionModalContext); */
     const [campeones, setCampeones] = useState(state);
+   /*  const [ mostrarModal, setMostrarModal ] = useState(stateModal.mostrarModal) */
 
     useEffect(() => {
         if (inicio === true) {
@@ -22,7 +26,7 @@ export default function ChampionsC() {
     }, [])
 
     return (
-        <div>
+        <div id="championsC">
             {
                 console.log('Estado en el return: '),
                 console.log(state),
@@ -32,6 +36,11 @@ export default function ChampionsC() {
                     )
                 })
             }
+          {/*   <ChampionModal
+                show={true}
+                onHide={() => false}
+            /> */}
         </div>
+        
     );
 }

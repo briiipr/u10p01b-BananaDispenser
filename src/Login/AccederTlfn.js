@@ -13,7 +13,7 @@ export default class AccederTlfn extends Component {
   phoneAuth() {
     document.getElementById("recaptcha-container").style.display = "inline"
     let telefono = document.getElementById('telefono').value
-    if(telefono.length === 9 && !(isNaN(telefono))) {
+    if (telefono.length === 9 && !(isNaN(telefono))) {
       let prefijo = document.getElementById('prefijo').value
       telefono = `+${prefijo}${telefono}`
       window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
@@ -29,7 +29,7 @@ export default class AccederTlfn extends Component {
           window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
         });
     }
-    else{
+    else {
       document.getElementById("Info").innerHTML = "No has introducido un numero de telefono valido"
     }
   }
@@ -63,23 +63,25 @@ export default class AccederTlfn extends Component {
 
   render() {
     return (
-      <div id="registradoTlfn" >
-        <div>
-        <label for="telefono">Introduzca su numero de telefono: </label>
-        <select id="prefijo">
-          <option value="34">+34</option> 
-          <option value="33">+33</option>
-          <option value="39">+39</option>
-        </select>
-        </div>
-        <input class="separapoco" type="text" id="telefono" min="0" />
-        <button class="separa" onClick={this.phoneAuth}>Enviar SMS</button>
-        <button class="separa" onClick={this.volver}>Volver</button>
-        <p id="recaptcha-container"></p>
-        <div id="verificacion">
-          <label for="Codigo">Codigo del sms</label>
-          <input type="text" id="Codigo" />
-          <button class="separa" onClick={this.codeVerify}>Comprobar</button>
+      <div id="accedertlfn">
+        <div id="registradoTlfn" >
+          <div>
+            <label for="telefono">Introduzca su numero de telefono: </label>
+            <select id="prefijo">
+              <option value="34">+34</option>
+              <option value="33">+33</option>
+              <option value="39">+39</option>
+            </select>
+          </div>
+          <input class="separapoco" type="text" id="telefono" min="0" />
+          <button class="separa" onClick={this.phoneAuth}>Enviar SMS</button>
+          <button class="separa" onClick={this.volver}>Volver</button>
+          <p id="recaptcha-container"></p>
+          <div id="verificacion">
+            <label for="Codigo">Codigo del sms</label>
+            <input type="text" id="Codigo" />
+            <button class="separa" onClick={this.codeVerify}>Comprobar</button>
+          </div>
         </div>
       </div>
     );

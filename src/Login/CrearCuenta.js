@@ -41,7 +41,7 @@ export default class CrearCuenta extends Component {
 
           });
       } else
-      mensajeError = "Contraseña introducida no valida, la longitud es de entre 8 y 15 con al menos una mayuscula, una minuscula, un numero y 1 caracter especial"
+      mensajeError = "Contraseña introducida no válida, la longitud debe tener entre 8 y 15 caracteres con al menos una mayúscula, una minúscula, un número y 1 caracter especial"
     } else
     mensajeError = "Correo electronico no valido"
 
@@ -61,15 +61,15 @@ export default class CrearCuenta extends Component {
   }
   render() {
     return (
-      <div>
+      <div id="login">
         <div id="registro">
-          <label for="Correo">Correo electronico</label>
+          <label for="Correo">Correo electrónico</label>
           <input id="Correo" type="text" />
           <label for="Pass">Contraseña</label>
           <input id="Pass" type="password" />
-          <button class="separa" onClick={this.registrar}>Registrar</button>
-          <p>Si ya eres un BananaDispenser</p>
-          <button onClick={this.registered}>Pincha aqui</button>
+          <button class="separa" onClick={this.registrar}>Regístrate</button>
+          <label id="yaRegistradoTexto">O si ya eres un BananaDispenser</label>
+          <button onClick={this.registered}>Pincha aquí</button>
         </div>
         <p id="Info"></p>
       </div>

@@ -10,7 +10,6 @@ function main(target, container) {
 }
 
 main(
-
     <App />,
     document.getElementById("root")
 );

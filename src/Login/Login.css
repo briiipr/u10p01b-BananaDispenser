@@ -3,7 +3,7 @@
 }
 
 body {
-    color:white;
+    color: white;
 }
 
 #registro {
@@ -28,7 +28,7 @@ body {
 }
 
 #saludo {
-    color:black;
+    color: gold;
 }
 
 #OtrosLogs {
@@ -36,7 +36,7 @@ body {
     padding: 2em;
 }
 
-#OtrosLogs > button{
+#OtrosLogs>button {
     margin-left: 1em;
 }
 
@@ -64,21 +64,29 @@ body {
     border: none;
 }
 
-input {
-    border-radius: 1em;
-}
-
 #registradoTlfn {
-    display:none;
+    display: none;
     flex-direction: column;
     text-align: center;
 }
 
 #verificacion {
-    display:none;
+    display: none;
     flex-direction: column;
 }
 
 #Info {
     max-width: 13em;
+    margin-top: 1em;
+}
+
+#yaRegistradoTexto {
+    margin-top: 1em;
+}
+
+#logout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
 }

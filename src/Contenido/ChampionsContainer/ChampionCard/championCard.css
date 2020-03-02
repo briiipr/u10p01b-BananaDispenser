@@ -1,7 +1,7 @@
 .card {
     margin: .5rem 2rem;
     width: 13rem;
-    transition: all .2s linear;
+    transition: all .3s linear;
     background-color: rgb(21, 28, 34)
 }
 
@@ -10,12 +10,12 @@
     border: 1px solid rgb(147, 115, 65);
 }
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
 }
 
-button{
+button {
     background-color: rgb(170, 133, 74);
     border: thin rgb(147, 115, 65);
     border-radius: 5px;
@@ -24,10 +24,81 @@ button{
     outline: none;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(168, 158, 68);
 }
 
-button:focus{
+button:focus {
     border: none;
+}
+
+#infoCampeon {
+    text-align: initial;
+}
+
+div[id^="tipsContainer"] {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div[id^="tipsContainer"] div {
+    border: 1px solid lightgreen;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+div[id^=graphContainer] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div[id^=graphCd] {
+    align-self: center;
+}
+
+div[id^="infoSkills"] {
+    text-align: initial;
+    margin: 1em;
+}
+
+img[id^=imgSpell] {
+    display: block;
+}
+
+img[id^=imgPassive] {
+    display: block;
+}
+
+div[id^="divSpell"], div[id^="passiveDiv"] {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+p[id^="lore"], div[id^="allyTips"] p, div[id^="enemyTips"] p {
+    color: white;
+}
+
+video[id^="video"] {
+    width: 50%;
+    border: 2px solid gold;
+    margin-bottom: 0.8em;
+}
+
+img[id^="tagImg"]{
+    width: 25px;
+    height: 25px;
+    margin: 0.5em;
+}
+
+p[id^="tags"]{
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+
+p[id^="lore"]{
+    margin-top: 0.5em;
 }

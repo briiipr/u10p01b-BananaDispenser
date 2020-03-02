@@ -8,29 +8,14 @@ import LogOut from '../Login/LogOut.js';
 
 export default function LoginComponent(props) {
 
-    const [isLogedIn, setIsLogedIn] = useState(props)
+    return (
 
-    if (isLogedIn === true) {
-        return (
-            <React.Fragment>
-                {
-                    console.log('EL VALOR DE ISLOGEDIN ES: ' + isLogedIn)
-                }
-                <LogOut />
-            </React.Fragment>
-        )
-    } else {
-        return (
-
-            <React.Fragment>
-                {
-                    console.log('EL VALOR DE ISLOGEDIN ES: ' + isLogedIn)
-                }
-                <CrearCuenta>{isLogedIn}</CrearCuenta>
-                <Acceder isLogedIn={isLogedIn}/>
-                <AccederTlfn isLogedIn={isLogedIn}/>
-                <OtrosLogs isLogedIn={isLogedIn}/>
-            </React.Fragment>
-        )
-    }
+        <React.Fragment>
+            <CrearCuenta />
+            <Acceder />
+            <AccederTlfn />
+            <OtrosLogs />
+            <LogOut />
+        </React.Fragment>
+    )
 }

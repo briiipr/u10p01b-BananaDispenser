@@ -22,3 +22,19 @@ code {
     monospace;
 }
 
+html *{
+  color: gold;
+}
+
+#login{
+  display: flex;
+  flex-direction: column;
+}
+
+#login *{
+  width: auto;
+}
+
+button{
+  border-radius: 0.2em !important;
+}

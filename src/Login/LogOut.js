@@ -17,20 +17,25 @@ export default class LogOut extends Component {
     document.getElementById("telefono").value = "";
 
     fire.auth().signOut().then(function () {
-      document.getElementById("saludo").innerHTML = `Ha cerrado su sesion`;
+      document.getElementById("Info").innerHTML = `Ha cerrado su sesión.`;
       document.getElementById("registrado").style.display = "none";
       document.getElementById("registradoTlfn").style.display = "none";
       document.getElementById("registro").style.display = "flex";
       document.getElementById("OtrosLogs").style.display = "none";
       document.getElementById("Logged").style.display = "none";
+      document.getElementById("championPage").style.display = "none";
+      document.getElementById("saludo").style.display = "none";
+      document.getElementById("saludo").innerHTML = "";
     })
       .catch(console.log);
   }
 
   render() {
     return (
-      <div id="Logged">
-        <button onClick={this.logout}>Logout</button>
+      <div id="logout">
+        <div>
+          <button id="Logged" onClick={this.logout}>Logout</button>
+        </div>
       </div>
     );
   }

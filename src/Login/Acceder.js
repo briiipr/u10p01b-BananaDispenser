@@ -25,18 +25,18 @@ export default class Acceder extends Component {
       // Handle Errors here.
       var errorCode = error.code;
       if (errorCode === 'auth/invalid-email') {
-        document.getElementById("Info").innerHTML = `El correo es invalido`;
+        document.getElementById("Info").innerHTML = `Correo no válido.`;
       }
       console.log(error);
     })
       .then(result => {
         if (result != null) { 
           let user = result.user;
-          document.getElementById("saludo").innerHTML = `Bienvenido ${user.email}`;
+          document.getElementById("saludo").innerHTML = `Bienvenid@ ${user.email}`;
           console.log('VALOR DE PROPS: ' + this.props)
           limpia();
         } else {
-          document.getElementById("Info").innerHTML = `Usuario o contraseña mal introducidos`;
+          document.getElementById("Info").innerHTML = `Usuario o contraseña incorrectos.`;
         }
       });
   }
@@ -44,7 +44,7 @@ export default class Acceder extends Component {
   render() {
     return (
       <div id="registrado" >
-        <label for="Usuario">Correo electronico</label>
+        <label for="Usuario">Correo electrónico</label>
         <input id="Usuario" type="text" />
         <label for="Contrasena">Contraseña</label>
         <input id="Contrasena" type="password" />

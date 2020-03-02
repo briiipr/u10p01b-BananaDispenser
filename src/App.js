@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-
+import './App.css'
 import ReactDOM from 'react-dom';
 
 import LoginComponent from './Contenido/LoginComponent.js'
@@ -19,38 +19,11 @@ export function App() {
             document.getElementById('acceder')
         ), */
         <React.Fragment>
-            {LoginComponent(isLogedIn)},
+            <LoginComponent />
             <p id="saludo"></p>
             <ChampionPageComponent />
         </React.Fragment>
     )
 }
-
-/* ReactDOM.render(
-    <CrearCuenta />,
-    document.getElementById('login')
-),
-
-ReactDOM.render(
-    <CrearCuenta />,
-    document.getElementById('login')
-);
-
-
-
-ReactDOM.render(
-    <OtrosLogs />,
-    document.getElementById('otroslogs')
-);
-
-ReactDOM.render(
-    <AccederTlfn />,
-    document.getElementById('accedertlfn')
-);
-
-ReactDOM.render(
-    <LogOut />,
-    document.getElementById('logout')
-); */
 
 export default App;
